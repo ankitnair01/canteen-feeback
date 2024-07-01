@@ -1,0 +1,192 @@
+/* Adjust your styles as necessary */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#hero {
+    background-color: bisque;
+    margin-bottom: 15px;
+}
+
+#nav {
+    background-color: rgb(242, 142, 70);
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 4px solid #e04c02;
+    border-radius: 10px;
+    position: relative;
+}
+
+#nav a {
+    color: black;
+}
+
+.nav-logo img {
+    height: 60px;
+    width: 60px;
+    transition: box-shadow 0.3s ease;
+}
+
+.nav-logo img:hover {
+    box-shadow: 0 0 40px rgba(3, 133, 247, 0.8);
+}
+
+#nav-heading {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1 {
+    font-size: calc(3vw);
+    text-transform: uppercase;
+}
+
+#form-container {
+    text-size-adjust: auto;
+    background-color: #eacd65;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border: 2px solid #0056b3; /* Optional: Add border to form container */
+    margin-top: 10px;
+    margin-bottom: 10px; /* Adjusted margin-bottom for spacing */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #e04c02;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c03e02;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+.radio-inline {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.slider-label-left,
+.slider-label-right {
+    font-size: 14px;
+    color: #666;
+}
+
+.slider-label-left {
+    flex: 1;
+    text-align: left;
+}
+
+.slider-label-right {
+    flex: 1;
+    text-align: right;
+}
+
+.slider {
+    width: 70%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.15s ease-in-out;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.slider-value {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}

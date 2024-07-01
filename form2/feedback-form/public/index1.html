@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering Services Feedback</title>
+    <link rel="icon" href="ongc.png" type="image/png">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <a href="https://ongcindia.com/" class="nav-logo"><img src="ongc.png" alt="ONGC Logo"></a>
+                <div id="nav-heading">
+                    <h1><b>Catering Services Feedback</b></h1>
+                </div>
+            </div>
+            <div id="form-container">
+                <form id="new-feedback-form" action="/submit-feedback" method="POST">
+                    <div class="form-group">
+                        <label for="guestName">Name of the Guest:</label>
+                        <input type="text" id="guestName" name="guestName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <input type="text" id="department" name="department" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="seatNo">Seat No:</label>
+                        <input type="text" id="seatNo" name="seatNo" required>
+                    </div>
+                    <label>1. Was the Tea Served on Time (Morning):</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaMorningYes" name="teaMorning" value="Yes" required> Yes
+                        
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaMorningNo" name="teaMorning" value="No"> No
+                    </div>
+
+                    <label>2. Quality of Tea Served:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaQualityExcellent" name="teaQuality" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaQualityGood" name="teaQuality" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaQualitySatisfactory" name="teaQuality" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaQualityNeedsImprovement" name="teaQuality" value="Needs Improvement"> Needs Improvement
+                    </div>
+                    
+
+                    <label>3. Was the Tea Served on Time (Evening):</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaEveningYes" name="teaEvening" value="Yes" required> Yes
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="teaEveningNo" name="teaEvening" value="No"> No
+                    </div>
+                    
+
+                    <label>4. Quality of Lunch Served:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="lunchQualityExcellent" name="lunchQuality" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="lunchQualityGood" name="lunchQuality" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="lunchQualitySatisfactory" name="lunchQuality" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="lunchQualityNeedsImprovement" name="lunchQuality" value="Needs Improvement"> Need Improvement
+                    </div>
+                    
+                    <label>5. Was the Evening Snacks & Breakfast Served on Time:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="snacksOnTimeYes" name="snacksOnTime" value="Yes" required> Yes
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="snacksOnTimeNo" name="snacksOnTime" value="No"> No
+                    </div>
+                    
+                    <label>6. Quality of Snacks & Breakfast:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="snacksQualityExcellent" name="snacksQuality" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="snacksQualityGood" name="snacksQuality" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="snacksQualitySatisfactory" name="snacksQuality" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="snacksQualityNeedsImprovement" name="snacksQuality" value="Needs Improvement"> Needs Improvement
+                    </div>
+                    
+                    <label>7. Availability of MRP Items:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="mrpItemsExcellent" name="mrpItems" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="mrpItemsGood" name="mrpItems" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="mrpItemsSatisfactory" name="mrpItems" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="mrpItemsNeedsImprovement" name="mrpItems" value="Needs Improvement"> Needs Improvement
+                    </div>
+                    
+                    <label>8. Quality of Service:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="serviceQualityExcellent" name="serviceQuality" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="serviceQualityGood" name="serviceQuality" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="serviceQualitySatisfactory" name="serviceQuality" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="serviceQualityNeedsImprovement" name="serviceQuality" value="Needs Improvement"> Needs Improvement
+                    </div>
+                    
+                    <label>9. Efficiency of Staff:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="staffEfficiencyExcellent" name="staffEfficiency" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="staffEfficiencyGood" name="staffEfficiency" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="staffEfficiencySatisfactory" name="staffEfficiency" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="staffEfficiencyNeedsImprovement" name="staffEfficiency" value="Needs Improvement"> Needs Improvement
+                    </div>
+                    
+                    <label>10. Overall Quality of Catering Services:</label>
+                    <div class="radio-inline">
+                        <input type="radio" id="cateringQualityExcellent" name="cateringQuality" value="Excellent" required> Excellent
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="cateringQualityGood" name="cateringQuality" value="Good"> Good
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="cateringQualitySatisfactory" name="cateringQuality" value="Satisfactory"> Satisfactory
+                    </div>
+                    <div class="radio-inline">
+                        <input type="radio" id="cateringQualityNeedsImprovement" name="cateringQuality" value="Needs Improvement"> Needs Improvement
+                    </div>
+                   
+
+                    <div class="form-group">
+                        <label for="serviceRating">Rate your service (1-10, 10 being Excellent):</label>
+                        <div class="slider-container">
+                            <span class="slider-label-left"><b>Poor</b></span>
+                            <input type="range" id="serviceRating" name="serviceRating" min="1" max="10" value="5" class="slider" oninput="updateSliderValue(this.value)" required>
+                            <span class="slider-label-right"><b>Excellent</b></span>
+                        </div>
+                        <span id="serviceRatingValue" class="slider-value">5</span>
+                    </div>
+                    
+                    
+
+                    <div class="form-group">
+                        <label for="comments">Would you like to suggest us any additional comment:</label>
+                        <textarea id="comments" name="comments" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
